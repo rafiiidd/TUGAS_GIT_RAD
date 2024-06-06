@@ -1,0 +1,105 @@
+/* Style untuk elemen header */
+header {
+  background-color: #0a6847;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style untuk elemen h1 di dalam header */
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style untuk elemen nav di dalam header */
+header nav {
+  margin-top: 15px;
+}
+
+/* style untuk link didalam elemen nav */
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  font-family: "Open Sans";
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* style untuk link ketika di-hover */
+header nav a:hover {
+  color: #f3ca52;
+}
+
+/* style untuk underline animasi */
+header nav ::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #f3ca52;
+  transition: width 0.3s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+}
+
+header nav a:hover::after {
+  width: 100%;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #f3ca52; /* warna latar belakang */
+}
+
+main {
+  max-width: 1500px;
+  margin: 15px auto;
+  padding: 20px;
+  background-color: #F6E9B2; /* warna latar belakang konten */
+  border-radius: 8px; /* sudut bulat pada konten */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* bayangan untuk efek mendalam */
+}
+
+h2 {
+  color: #333; /* warna teks */
+  font-size: 24px; /* ukuran teks */
+  margin-bottom: 10px; /* jarak antara teks dengan paragraf */
+}
+
+p {
+  color: #000000; /* warna teks paragraf */
+  font-size: 16px; /* ukuran teks paragraf */
+  line-height: 1.5; /* jarak antara baris */
+}
+
+footer {
+  background-color: #0a6847; /* warna latar  belakang */
+  color: #333; /* warna teks */
+  padding: 20px; /* padding di dalam footer */
+  text-align: center; /* teks di tengah */
+  font-size: 14px; /* ukuran teks */
+}
+
+footer p {
+  margin: 0; /* hapus margin default pada paragraf di dalam footer */
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh; /* Set tinggi agar konten berada di tengah halaman */
+}
+
+img {
+  margin-right: 50px;
+}
